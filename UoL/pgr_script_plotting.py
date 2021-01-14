@@ -3,7 +3,7 @@ os.chdir("c:\\Users\\nttdo\\learning.python\\UoL")
 import pandas as pd
 import matplotlib.pyplot as plt 
 
-data = pd.read_csv("Dentistry_Jan2021.csv")
+data = pd.read_csv("Dentistry_Jan2021.csv") #note that the initial excel file had to be converted to CSV UTF8, and that the date format had to be changed to US from UK.
 
 #to extract year and month together into another column:
 data['Start_year'] = pd.to_datetime(data['Start']).dt.year
